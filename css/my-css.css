@@ -1,0 +1,24 @@
+.section {
+    
+    padding: 1.5rem;
+}
+.carousel-item {
+    height: 600px;
+}
+.category-image {
+    width: 140px;
+    height: 140px;
+}
+.centre {
+    text-align: center;
+    display: block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ms-image {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
