@@ -1,13 +1,33 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: .8125em;
+    color: #6d6e70;
+    line-height: 2.1;
+    }
+
 .section {
-    
-    padding: 1.5rem;
+    padding: 3rem;
+
 }
 .carousel-item {
-max-height: 600px;
+max-height: 650px;
+}
+
+.text-container {
+    background-color: black!important;
+    color: white!important;
+    padding: 1rem;
+
+    
 }
 .category-image {
     width: 140px;
     height: 140px;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
 .centre {
     text-align: center;
@@ -16,9 +36,40 @@ max-height: 600px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .ms-image {
-    width: 400px;
+    width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+padding: 0.5rem;
+}
+
+.card-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: rgb(70, 72, 73);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    color: white;
+    height: 100%;
+}
+.btn{
+    width: 105px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    white-space: nowrap;
+}
+
+
