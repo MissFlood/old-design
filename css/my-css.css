@@ -4,10 +4,18 @@ body {
     font-size: 0.91em;
     color: #575757;
     line-height: 2.1;
+   
     }
     .nav-logo {
         width: 120px;
     }
+    @media only screen and (max-width: 600px) { .nav-logo {
+        display: none;
+    }
+}
+.nav-link {
+    color: white!important;
+}
     main {
         padding-top: 1rem;
         padding-bottom: 4rem;
@@ -19,11 +27,68 @@ body {
 
 }
 .carousel-item {
-max-height: 700px;
+
+}
+.carousel-caption {
+    text-align: right;
+top: 1.25rem;
+bottom: initial;
+left: initial;
+right: 1.25rem;
+padding-right: 1.25rem;
+padding-left: 1.25rem;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-size: 1.3em;
+}
+.carousel-image-1 {
+    background-image: url(../images/hispec-edgehill-library-nordic-brown-light-copper-cropped.jpg);
+    width: 100%;
+height: 90vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.w-100 {
-    object-fit: 
+.carousel-image-2 {
+    background-image: url(../images/metalex-sudbourne-stainless-steel-snaplock.JPG);
+    width: 100%;
+height: 90vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.carousel-image-3 {
+    background-image: url(../images/proclad-western-harbour-preaged-zinc-temp-image.JPG);
+    width: 100%;
+height: 90vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.carousel-image-4 {
+    background-image: url(../images/amr-shot-tower-textures-corten-temp-image.JPG);
+    width: 100%;
+height: 90vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.carousel-image-5 {
+    background-image: url(../images/mc&h-merkinch-greencoat.JPG);
+    width: 100%;
+height: 90vh; /* You must set a specified height */
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+@media only screen and (max-width: 600px) {
+.carousel-image-1{
+    height: 90vh;
+}
 }
 
 .text-container {
@@ -34,13 +99,44 @@ max-height: 700px;
     
 }
 .category-image {
-    width: 200px;
-    height: 200px;
+    
+    
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
    
 }
+.button {
+    font-size: 1rem!important;
+    text-decoration: none;
+    color: #575757;
+    text-align: right;
+}
+.button:hover {
+    color: #575757;
+}
+
+.button:hover .arrow-btn{
+    background-color:rgb(70, 71, 71);
+    color: white;
+    transition: color, background-color 0.2s ease-in-out;
+}
+.find-out-more {
+    display: inline-block;
+}
+.find-out-more:hover {
+    color: #575757;
+    text-decoration: underline;
+}
+.arrow-btn {
+    display: inline-block;
+    
+padding: unset;
+padding-left: 10px;
+padding-right: 10px;
+    border-radius: 50px;
+}
+
 .centre {
     text-align: center;
 justify-content: center;
@@ -55,31 +151,44 @@ justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
-
+#carousel-logos {
+    margin-bottom: 2em;
+}
+.supplier-logo {
+    padding-top: 1em;
+}
+@media only screen and (max-width: 600px) {
+    .supplier-logo{
+       width: 50%;
+    }
+}
 .categories {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-padding: 0.5rem;
+    padding: 0.5rem;
 }
 
+.img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .card-border {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1.5rem;
-    border-radius: 30px;
-box-shadow: 2px 2px 5px gray;
-background: rgb(224,224,224);
-background: linear-gradient(270deg, rgba(224,224,224,1) 0%, rgba(187,187,187,1) 100%); 
+    background: linear-gradient(270deg, rgba(224,224,224,1) 0%, rgba(187,187,187,1) 100%); 
+
     height: 100%;
-    
+    font-size: 0.9em;
 }
+
 .btn{
-    width: 105px;
+    width: initial;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
     background-color: #3a3a3a;
  
   
@@ -97,10 +206,4 @@ padding-top: 2em;
 }
 .footer-logo {
     width: 200px;
-}
-a {
-    color: white;
-}
-a:hover {
-    color: rgb(148, 148, 148);
 }
