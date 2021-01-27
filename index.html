@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/my-css.css">
+
+
+<!-- Font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap" rel="stylesheet"> 
+
     <title>Metal Solutions Ltd</title>
   </head>
   <body>
-
-    
+ 
     
     <!-- Sticky Menu -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
@@ -252,13 +257,22 @@
 
 <!-- Systems Section -->
 <div class="blue-background">
-<div class="container"> 
-<div class="section row">
-  <h2>Systems</h2>
-  <div class="col-md-6">
+
+<div class="container section">  <h2>Systems</h2>
   <p>As with Metals, systems are a personal choice and we can advise on the many systems available.</p>
-  </div>
-  <div class="col-md-6">
+
+<div class="systems">
+ 
+      <div class="systems-grid">
+        <a class="shingles" href="#"><div class="system-name">Shingles 🡢</div></a>
+        <a class="standing-seam" href="#"><div class="system-name">Standing Seam 🡢</div></a>
+        <a class="reveal" href="#"><div class="system-name">Reveal Panels 🡢</div></a>
+        <a class="snaplock" href="#"><div class="system-name">Snaplock 🡢</div></a>
+        <a class="batten-roll" href="#"><div class="system-name">Batten Roll 🡢</div></a>
+    </div>
+
+
+  <div class="systems-wording">
   <h5>Our Systems:</h5>
    <ul style="padding-left: 20px;">
      <li style="list-style:'✔ ';">Standing seam</li>
@@ -267,7 +281,7 @@
      <li style="list-style:'✔ ';">Shingle</li>
      <li style="list-style:'✔ ';">Shiplap panel</li>
      <li style="list-style:'✔ ';">Flatlock panel</li>
-     <li style="list-style:'✔ ';">Reveal panel (also known as plank panel or interlocking panel)</li>
+     <li style="list-style:'✔ ';">Reveal, plank, interlocking panel</li>
      <li style="list-style:'✔ ';">Sinusoidal panel</li>
      <li style="list-style:'✔ ';">Perforated products</li>
      <li style="list-style:'✔ ';">Topclip coping</li>
@@ -342,25 +356,43 @@
 <!-- Rainwater Goods Section -->
 <div class="container"> 
 <div class="col-sm-12 section">
-  <div class="row">
-    <div class="col-md-6">
-  <h3>Rainwater Goods</h3></div>
+ <h3>Rainwater Goods</h3>
   <p>Metal Solutions Ltd manufacture rainwater goods in Zinc, Copper, Stainless Steel and other alloys, as well as supplying our branded GreenCoat GreenLine® colour coated galvanised steel system.</p> 
-  </div>
-  <div class="col-md-6">
-  <img style="max-height: 500px;" class="category-image img-fluid" src="images/rainwater-goods-homepage.JPG" alt="">
+  <div class="rwg-grid">
+    <a class="zinc-rwg" href="#">
+      <div class="rw-wording">Zinc Rainwater System 🡢
+<p style="font-size: 15px; padding-left: 10px; padding-right: 10px;">Natural, light preweathered & dark preweathered zinc gutters, pipes and accessories, giving a cost effective yet pleasing visual experience.</p>
+    </div></a>
+    <a class="ss-rwg" href="#">
+      <div class="rw-wording">Stainless Steel Rainwater System 🡢
+        <p style="font-size: 15px; padding-left: 10px; padding-right: 10px;">Classic brush rolled 316 grade stainless steel gutters, pipe and accessories, infinitely compatible with all other building materials and very long lasting.</p>
+      </div></a>
+    <a class="copper-rwg" href="#">
+      <div class="rw-wording">Copper Rainwater System 🡢
+      <p style="font-size: 15px; padding-left: 10px; padding-right: 10px;">Natural copper gutters, pipes and accessories that age over time from a bright initial finidh, through brown and eventually forming the beautiful blue green patina.</p>
+
+    </div></a>
+    <a class="greencoat-rwg" href="#">
+      <div class="rw-wording">GreenCoat® Rainwater System 🡢
+        <p style="font-size: 15px; padding-left: 10px; padding-right: 10px;">Colour coated gutters, pipes and accessories made from SSAB GreenCoat® RWS coated steel, readily available and easy to install.</p>
+      
+      </div></a>
 </div>
+</div>
+ 
+
   <a class="button" href="#" role="button">
     <div class="find-out-more">FIND OUT MORE</div>
     <div class="arrow-btn">→</div>
   </a>
 </div>
-</div>
+
 
 
 <div class="blue-background">
 <div class="container"> 
-  <div class="row section justify-content-between">   
+  <div class="row section justify-content-between">
+       
 <!-- Bespoke Products Section -->
 <div class="col-xl-3 col-md-6 section categories">
   <div class="card-border">
@@ -421,9 +453,53 @@
 </div>
 </div>
 </div>
+
+<!-- Contact Form -->
+<div class="grey-background">
+<div class="container section">
+  <h2>Request your quotation here</h2>
   
-  
+  <div class="row">
+    <div class="col-md-6">
+      
+      <div class="row">
+  <div class="col-sm-6 mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+  </div>
+
+  <div class="col-sm-6 mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Phone</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Number">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+
+  <div class="mb-3">
+    <label for="formFileMultiple" class="form-label">Upload Drawings</label>
+    <input class="form-control" type="file" id="formFileMultiple" multiple>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please advise your choice of metals / systems etc"></textarea>
+  </div>
+
+  <button class="submit" type="submit">Send</button>
+ </div>
+ </div>
+
+
+    
+</div>
+</div>
+
+  <!-- Footer -->
 <footer class="row footer container-fluid">
+
   <div class="col-md-4 left-footer">
 <img src="images/metal-solutions-logo-transparent-cropped.png" alt="Metal Solutions Logo" class="footer-logo">
 </div>
@@ -444,6 +520,7 @@
    <li><a href="#">Kent</a></li>
    </ul>
  </div>
+
 </footer>
 
     <script src="js/bootstrap.min.js"></script>

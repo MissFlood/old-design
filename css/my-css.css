@@ -22,8 +22,8 @@ body {
     }
 
 .section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
 }
 .grey-background {
@@ -119,9 +119,159 @@ height: 80vh; /* You must set a specified height */
 
     
 }
+.shingles {
+    background-size: cover;
+background-image: url(../images/shingles-homepage.jpg);
+grid-column: 1 / 5;
+grid-row: 1 / 2;
+min-height: 275px;
+text-decoration: none;
+}
+.reveal {
+    background-size: cover;
+background-image: url(../images/reveal-panel-homepage.jpg);
+grid-column: 5 / 8;
+grid-row: 1 / 2;
+text-decoration: none;
+}
+.standing-seam {
+    background-size: cover;
+background-image: url(../images/standing-seam-homepage-cropped.jpg);
+grid-column: 8 / 12;
+grid-row: 1 / 2;
+text-decoration: none;
+}
+
+.batten-roll {
+    background-size: cover;
+background-image: url(../images/batten-roll-homepage.jpg);
+grid-column: 1 / 6;
+grid-row: 2 / 3;
+text-decoration: none;
+}
+
+.snaplock {
+    background-size: cover;
+background-image: url(../images/snaplock-homepage.JPG);
+grid-column: 6 / 12;
+grid-row: 2 / 3;
+text-decoration: none;
+}
+.systems{
+    display: flex;
+}
+.systems-wording {
+    width: 25%;
+    margin-left: 2rem;
+}
+
+.systems-grid {
+  
+    display: grid;
+
+grid-template-rows: 1fr 1fr;
+column-gap: 10px;
+row-gap: 10px;
+width: 75%;
+max-width: 800px;
+min-height: 550px;
+}
+
+
+.system-name {
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+color: white;
+font-size: 20px;
+font-weight: 1;
+padding-left: 10px;
+width: 100%;
+height: 100%;
+
+background: rgba(0, 0, 0, 0.5);
+}
+
+.system-name:hover {
+    opacity: 1;
+}
+
+.rwg-grid {
+  
+    display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+column-gap: 10px;
+row-gap: 10px;
+max-width: 1000px;
+min-height: 550px;
+}
+
+
+.rw-wording {
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+color: white;
+font-size: 20px;
+font-weight: 1;
+padding-left: 10px;
+width: 100%;
+height: 100%;
+
+background: rgba(0, 0, 0, 0.5);
+}
+
+.rw-wording:hover {
+    opacity: 1;
+}
+
+.zinc-rwg {
+    background-size: cover;
+    background-image: url(../images/zinc-rainwater-system.JPG);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    min-height: 275px;
+    text-decoration: none;
+}
+
+.ss-rwg {
+    background-size: cover;
+    background-image: url(../images/stainess-steel-rainwater-system.jpg);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    min-height: 275px;
+    text-decoration: none;
+}
+
+.copper-rwg {
+    background-size: cover;
+    background-image: url(../images/copper-rainwater-system.JPG);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    min-height: 275px;
+    text-decoration: none;
+}
+
+.greencoat-rwg {
+    background-size: cover;
+    background-image: url(../images/greencoat-rainwater-system.JPG);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    min-height: 275px;
+    text-decoration: none;
+}
+
+
+
+
 .category-image {
-    
-    
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -212,17 +362,27 @@ justify-content: center;
  
   
 }
-h2 {
-    white-space: nowrap;
-}
+
 li {
     list-style: none;
+}
+
+.submit {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color:  #3a3a3a;
+    background-color:white;
+    border-radius: 10px;
+    
 }
 .footer {
 background-color: black;
 color: white;
 padding-top: 2em;
+
 }
+
 .footer-logo {
     width: 200px;
 }
